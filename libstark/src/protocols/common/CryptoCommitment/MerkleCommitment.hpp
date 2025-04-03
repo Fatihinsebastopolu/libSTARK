@@ -4,6 +4,7 @@
 #include <vector>
 #include <array>
 #include <cstring>
+#include <string>
 #include <map>
 #include <set>
 
