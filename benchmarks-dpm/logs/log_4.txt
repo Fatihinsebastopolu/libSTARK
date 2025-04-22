@@ -5,7 +5,7 @@
 | number of variables per state (w)              = 81       |
 | number of regular constraints (s)              = 1        |
 | number of permutation constraints              = 0        |
-| number of cycles (c)                           = (2^12)-1 |
+| number of cycles (c)                           = (2^11)-1 |
 | degree of constraint system (d)                = 8        |
 | degree of permutation constraint system        = -1       |
 | number of boundary constraints (B)             = 4        |
@@ -19,8 +19,8 @@
 | field size                             = 2^64  |
 | number of algebraic-registers (|\Tau|) = 81    |
 | number of neighbors (|N|)              = 239   |
-| vanishing space size                   = 2^13  |
-| composition degree bound               = 73720 |
+| vanishing space size                   = 2^12  |
+| composition degree bound               = 36856 |
 --------------------------------------------------
 -------------------------------------------------------------
 | APR Specifications                                        |
@@ -28,21 +28,21 @@
 | field size                                       = 2^64   |
 | number of algebraic-registers (|\Tau|)           = 81     |
 | number of neighbors (|N|)                        = 239    |
-| witness (f) evaluation space size (|L|)          = 2^21   |
-| constraint (g) evaluation space size (|L_{cmp}|) = 2^19   |
+| witness (f) evaluation space size (|L|)          = 2^20   |
+| constraint (g) evaluation space size (|L_{cmp}|) = 2^18   |
 | witness (f) maximal rate (\rho_{max})            = 2^{-8} |
 | constraint (g) rate (\rho_{cmp})                 = 2^{-3} |
 | zero knowledge parameter (k)                     = 1      |
 | rate parameter (R)                               = 3      |
-| constraints degree log (d)                       = 16     |
+| constraints degree log (d)                       = 15     |
 -------------------------------------------------------------
-Constructing APR (ACSP) witness:....(0.863518 seconds)
+Constructing APR (ACSP) witness:....(0.77112 seconds)
 -----------------------------------------
 | FRI for witness (f) specifications #1 |
 -----------------------------------------
 | field size (|F|)      = 2^64          |
-| RS code dimension     = 2^13          |
-| RS block-length       = 2^21          |
+| RS code dimension     = 2^12          |
+| RS block-length       = 2^20          |
 | RS code rate          = 2^-{8}        |
 | Soundness error       = 2^-{64}       |
 | dim L_0 (eta)         = 2             |
@@ -54,8 +54,8 @@ Constructing APR (ACSP) witness:....(0.863518 seconds)
 | FRI for witness (f) specifications #2 |
 -----------------------------------------
 | field size (|F|)      = 2^64          |
-| RS code dimension     = 2^13          |
-| RS block-length       = 2^21          |
+| RS code dimension     = 2^12          |
+| RS block-length       = 2^20          |
 | RS code rate          = 2^-{8}        |
 | Soundness error       = 2^-{64}       |
 | dim L_0 (eta)         = 2             |
@@ -67,8 +67,8 @@ Constructing APR (ACSP) witness:....(0.863518 seconds)
 | FRI for witness (f) specifications #3 |
 -----------------------------------------
 | field size (|F|)      = 2^64          |
-| RS code dimension     = 2^13          |
-| RS block-length       = 2^21          |
+| RS code dimension     = 2^12          |
+| RS block-length       = 2^20          |
 | RS code rate          = 2^-{8}        |
 | Soundness error       = 2^-{3}        |
 | dim L_0 (eta)         = 2             |
@@ -80,12 +80,12 @@ Constructing APR (ACSP) witness:....(0.863518 seconds)
 | FRI for constraints (g) specifications #1 |
 ---------------------------------------------
 | field size (|F|)      = 2^64              |
-| RS code dimension     = 2^16              |
-| RS block-length       = 2^19              |
+| RS code dimension     = 2^15              |
+| RS block-length       = 2^18              |
 | RS code rate          = 2^-{3}            |
 | Soundness error       = 2^-{64}           |
 | dim L_0 (eta)         = 2                 |
-| recursion depth       = 8                 |
+| recursion depth       = 7                 |
 | COMMIT repetitions    = 2                 |
 | number of tests (ell) = 22                |
 ---------------------------------------------
@@ -93,12 +93,12 @@ Constructing APR (ACSP) witness:....(0.863518 seconds)
 | FRI for constraints (g) specifications #2 |
 ---------------------------------------------
 | field size (|F|)      = 2^64              |
-| RS code dimension     = 2^16              |
-| RS block-length       = 2^19              |
+| RS code dimension     = 2^15              |
+| RS block-length       = 2^18              |
 | RS code rate          = 2^-{3}            |
 | Soundness error       = 2^-{64}           |
 | dim L_0 (eta)         = 2                 |
-| recursion depth       = 8                 |
+| recursion depth       = 7                 |
 | COMMIT repetitions    = 2                 |
 | number of tests (ell) = 22                |
 ---------------------------------------------
@@ -106,34 +106,33 @@ Constructing APR (ACSP) witness:....(0.863518 seconds)
 | FRI for constraints (g) specifications #3 |
 ---------------------------------------------
 | field size (|F|)      = 2^64              |
-| RS code dimension     = 2^16              |
-| RS block-length       = 2^19              |
+| RS code dimension     = 2^15              |
+| RS block-length       = 2^18              |
 | RS code rate          = 2^-{3}            |
 | Soundness error       = 2^-{3}            |
 | dim L_0 (eta)         = 2                 |
-| recursion depth       = 8                 |
+| recursion depth       = 7                 |
 | COMMIT repetitions    = 1                 |
 | number of tests (ell) = 1                 |
 ---------------------------------------------
-communication iteration #1:....(0.823599 seconds)
-communication iteration #2:....(0.748563 seconds)
-communication iteration #3:.(0.0440668 seconds)
-communication iteration #4:.(0.0407762 seconds)
-communication iteration #5:.(0.0309556 seconds)
-communication iteration #6:.(0.0110721 seconds)
-communication iteration #7:(0.00344879 seconds)
-communication iteration #8:(0.00194283 seconds)
-communication iteration #9:.(0.0110625 seconds)
-communication iteration #10:.(0.0101479 seconds)
-communication iteration #11:.(0.0101456 seconds)
-communication iteration #12:.(0.0403638 seconds)
+communication iteration #1:...(0.336272 seconds)
+communication iteration #2:...(0.39603 seconds)
+communication iteration #3:.(0.0436867 seconds)
+communication iteration #4:.(0.0438131 seconds)
+communication iteration #5:.(0.0307568 seconds)
+communication iteration #6:.(0.0101455 seconds)
+communication iteration #7:.(0.0101381 seconds)
+communication iteration #8:.(0.0101544 seconds)
+communication iteration #9:.(0.0101869 seconds)
+communication iteration #10:.(0.0101471 seconds)
+communication iteration #11:.(0.0403632 seconds)
 Verifier decision: ACCEPT
 -------------------------------------------------------------------------
 | Protocol execution measurements                                       |
 -------------------------------------------------------------------------
-| Prover time                                       = 1.714003 Seconds  |
-| Verifier time                                     = 0.051890 Seconds  |
-| Total IOP length                                  = 4.093750 GBytes   |
-| Total communication complexity (STARK proof size) = 580.703125 KBytes |
-| Query complexity                                  = 413.664062 KBytes |
+| Prover time                                       = 0.862894 Seconds  |
+| Verifier time                                     = 0.047907 Seconds  |
+| Total IOP length                                  = 2.046875 GBytes   |
+| Total communication complexity (STARK proof size) = 556.078125 KBytes |
+| Query complexity                                  = 403.101562 KBytes |
 -------------------------------------------------------------------------
